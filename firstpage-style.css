@@ -1,0 +1,306 @@
+/*body {
+    background-image: url("bilder/metallback.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}*/
+/* test för scrolldown footer reveal */
+
+* {
+    box-sizing: border-box;
+}
+  
+main {
+    height: 100vh;
+}
+  
+footer {
+    height: 200px;
+    background-color: rgb(195, 146, 149);
+    position: relative;
+}
+footer .footer__inner {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    padding: 40px 60px;
+    width: 100%;
+}
+
+footer .footer__inner * {
+    color: #fff;
+}
+footer .logo {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 40px;
+    margin-bottom: 80px;
+    transform: translateY(50px);
+    opacity: 0;
+    transition: transform, opacity;
+    transition-duration: .8s;
+    transition-timing-function: ease;
+}
+footer .logo.show {
+    transform: translateY(0);
+    opacity: 1;
+}
+footer nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.social {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
+/* Kontaktbox */
+html,
+body {
+  height: 100%;
+  background: #2b3e51;
+  margin: 0;
+  overflow: hidden;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+  }
+  
+  .cube {
+    width: 60px;
+    height: 60px;
+    background: #f45c41;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    cursor: pointer;
+    transition: background 0.2s;
+  }
+  
+  .plus-vertical,
+  .plus-horizontal {
+    background: #fff;
+    border-radius: 4px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+  }
+  
+  .plus-vertical {
+    height: 50%;
+    width: 5px;
+  }
+  
+  .plus-horizontal {
+    width: 50%;
+    height: 5px;
+  }
+  
+  .quadrant {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .quadrant__item {
+    width: 50%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f45c41;
+    border-radius: 6px;
+    position: relative;
+  }
+  
+  .quadrant__item__content {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .arrow-down,
+  .arrow-left,
+  .arrow-right,
+  .arrow-up {
+    opacity: 0;
+  }
+  
+  .arrow-up {
+    transform: translateY(10px);
+  }
+  
+  .arrow-down {
+    transform: translateY(-10px);
+  }
+  
+  .arrow-left {
+    transform: translateX(10px);
+  }
+  
+  .arrow-right {
+    transform: translateX(-10px);
+  }
+  /* Slut kontaktbox */
+/* end of scrolling-down footer */
+text.a{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+    color: white;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-shadow: 2px 2px black;
+}
+
+mbar {
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: transparent;
+    text-shadow: 0 0 5px rgba(0,0,0,0.5);
+}
+li {
+    display: flex;
+}
+img {
+    opacity: inherit;    
+}
+p {
+    margin: 50px;
+}
+table, th, td{
+    border: 1px solid white;
+    color: white;
+}
+.logotype{
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* The fish type logo */
+#pointer {
+    width: 200px;
+    height: 50px;
+    position: relative;
+    position: absolute;
+    left: 0;
+    bottom: 1;
+    width: 0;
+    height: 0;
+    border-left: 50px solid rgb(32, 32, 31);
+    border-top: 100px solid transparent;
+    border-bottom: 100px solid transparent; 
+}
+#pointer:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    border-left: 50px solid grey;
+    border-top: 100px solid transparent;
+    border-bottom: 100px solid transparent;
+}
+/* ------ Button menu ------ */
+.bttn {
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: transparent;
+  text-shadow: 0 0 5px rgba(0,0,0,0.5);
+}
+a.bttn-dark {
+  color: white;
+  text-decoration: none;
+  transition: 0.3s ease all;
+}
+a.bttn-dark:hover {
+  color: rgb(131, 118, 118);
+}
+a.bttn-dark:focus {
+  color: rgb(255, 255, 255);
+}
+.bttn-dark {
+  font-size: 18px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-align: center;
+  width: 200px;
+  font-weight: bold;
+  padding: 14px 0px;
+  border: 3px solid #c0bccc;
+  border-radius: 2px;
+  position: relative;
+  z-index: 2;
+  margin: 10px;
+}
+.bttn-dark:before {
+  transition: 0.5s all ease;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  right: 50%;
+  bottom: 0;
+  opacity: 0;
+  content: '';
+  background-color: #dad6e4;
+  z-index: -1;
+}
+.bttn-dark:hover:before {
+  -webkit-transition: 0.5s all ease;
+  transition: 0.5s all ease;
+  left: 0;
+  right: 0;
+  opacity: 1;
+}
+.bttn-dark:focus:before {
+  -webkit-transition: 0.5s all ease;
+  transition: 0.5s all ease;
+  left: 0;
+  right: 0;
+  opacity: 1;
+}
+/*div.menu-bar{
+    text-align: center;
+    display: block;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    letter-spacing: 0px;
+    height: 50px;
+    color: white;
+}*/
+@media only screen and (min-width: 1024px){
+.main-nav a {
+    display: block;
+    padding: 30px 15px;
+    font-size: 14px;
+    text-decoration: none;
+    height: 100%;
+    -webkit-transition: color 0.3s;
+    transition: color 0.2s ease, padding 0.3s;
+    }
+}
