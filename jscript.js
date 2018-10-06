@@ -1,3 +1,5 @@
+console.log("asd");
+
 var svgs = document.querySelectorAll('svg');
 var cube = document.querySelector('.cube');
 var closeButton = document.querySelector('.quadrant__item__content--close');
