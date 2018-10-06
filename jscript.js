@@ -1,4 +1,4 @@
-console.log("asd");
+console.log("asd");asd
 
 var svgs = document.querySelectorAll('svg');
 var cube = document.querySelector('.cube');
